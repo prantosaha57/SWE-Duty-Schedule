@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta name="theme-color" content="#f5f7fb">
+    <meta name="description" content="SWE exam committee contact directory with editable demo cards.">
+    <title>SWE Exam Committee</title>
+    <link rel="stylesheet" href="./styles.css?v=8">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./index.html">
+        <span class="brand-mark">SWE</span>
+        <span><strong>Invigilation Duty Finder</strong><small>Department of Software Engineering</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="./index.html">Duty Roster</a>
+        <a href="./guidelines.html">Examination Guidelines</a>
+        <a class="active" href="./committee.html">Exam Committee</a>
+      </nav>
+      <div class="header-actions">
+        <span class="data-status ready" id="committeeStatus"><i></i> Demo contacts ready</span>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+          <span class="theme-track"><i></i></span>
+          <span class="theme-label">Light</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content-main">
+      <section class="page-heading">
+        <p class="eyebrow">People to contact</p>
+        <h1>SWE Exam Committee</h1>
+        <p>This page is intentionally clean and uses demo photos. Replace the entries in <code>committee-data.js</code> and put real photos in the <code>committee-photos</code> folder when the final committee list is ready.</p>
+      </section>
+
+      <section class="emergency-banner control-room-banner">
+        <div class="emergency-symbol">619</div>
+        <div>
+          <span>Exam-time contact point</span>
+          <strong>Exam Control Room: Room 619, AB4 Building</strong>
+          <p>For exam-time queries, call the assigned exam committee member. No WhatsApp message in the faculty group.</p>
+        </div>
+      </section>
+
+      <section class="committee-toolbar">
+        <div>
+          <strong id="committeeCount">Demo committee directory</strong>
+          <p>Each card supports name, designation, role, room, phone, email, and photo. Use this layout as the final template.</p>
+        </div>
+        <a class="secondary-action" href="./committee-data.js" target="_blank" rel="noopener">Edit data file</a>
+      </section>
+
+      <section class="committee-grid" id="committeeGrid">
+        <div class="guideline-loading"><span class="spinner"></span> Preparing committee directory...</div>
+      </section>
+
+      <section class="error-panel hidden" id="committeeError" role="alert">
+        <div class="error-icon">!</div>
+        <div><strong>Committee contacts could not be loaded</strong><p id="committeeErrorText"></p></div>
+      </section>
+    </main>
+
+    <footer class="developer-footer">
+      <span>SWE Invigilation Duty Finder - committee template</span>
+    </footer>
+    <script type="module" src="./theme.js?v=8"></script>
+    <script type="module" src="./committee.js?v=8"></script>
+  </body>
+</html>

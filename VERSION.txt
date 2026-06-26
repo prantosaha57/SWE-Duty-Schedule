@@ -1,0 +1,3 @@
+Version 8 - SWE Department customization
+Guidelines page: Room 619, AB4 Building; fixed Slot A/B/C times; official reminders and reference docs.
+Committee page: static demo cards with replaceable photos and data file.
