@@ -567,3 +567,23 @@ html[data-theme="dark"] .resource-card:hover { border-color: var(--green); }
 html[data-theme="dark"] .page-heading code { background: #172554; color: var(--green-dark); }
 @media (max-width: 760px) { .resource-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .resource-grid { grid-template-columns: 1fr; } }
+.site-credit {
+  margin-top: 50px;
+  padding: 22px 16px;
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  border-top: 4px solid #38bdf8;
+}
+
+.site-credit p {
+  margin: 4px 0;
+}
+
+.site-credit strong {
+  color: #bae6fd;
+  font-weight: 700;
+}
+</footer>
