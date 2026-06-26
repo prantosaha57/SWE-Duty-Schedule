@@ -571,7 +571,7 @@ html[data-theme="dark"] .page-heading code { background: #172554; color: var(--g
   margin-top: 50px;
   padding: 22px 16px;
   text-align: center;
-  background: linear-gradient(135deg, #0f172a, #38bdf8);
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: #ffffff;
   font-size: 14px;
   line-height: 1.6;
@@ -586,4 +586,13 @@ html[data-theme="dark"] .page-heading code { background: #172554; color: var(--g
   color: #bae6fd;
   font-weight: 700;
 }
-</footer>
+
+.site-credit a {
+  color: #bae6fd;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-credit a:hover {
+  text-decoration: underline;
+}
