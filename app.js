@@ -886,7 +886,7 @@ function buildRosterCanvas() {
   context.font = "600 18px Arial, sans-serif";
   const noteLines = wrapText(context, "Please collect answer scripts and question papers from the exam control room at least 20 minutes before the exam starts.", width - 140);
   noteLines.forEach((line, index) => drawText(context, line, 70, footerY + 38 + index * 27, { color: "#445148", size: 18, weight: 600 }));
-  drawText(context, "Developed by Md. Mahedi Hassan", width - 70, height - 35, { color: "#7d8780", size: 16, weight: 500, align: "right" });
+  drawText(context, "Developed by Pranto Saha", width - 70, height - 35, { color: "#7d8780", size: 16, weight: 500, align: "right" });
 
   return canvas;
 }
